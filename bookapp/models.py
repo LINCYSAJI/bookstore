@@ -27,8 +27,6 @@ class Publisher(models.Model):
     
     name=models.CharField(max_length=200,unique=True)
     
-    publication_date=models.DateField()
-    
     created_date=models.DateTimeField(auto_now_add=True)
     
     updated_date=models.DateTimeField(auto_now=True)
@@ -37,7 +35,7 @@ class Publisher(models.Model):
     
     def __str__(self):
         
-        self.name
+        return self.name
         
         
 class Language(models.Model):
@@ -52,7 +50,7 @@ class Language(models.Model):
     
     def __str__(self):
         
-        return self.language
+        return self.name
     
     
 class Category(models.Model):
