@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <form action="">
+    <form action="" method="post">
         {% csrf_token %}
         
         <div>
@@ -44,8 +44,8 @@
                               </svg>
                             </div>
                             <span class="text-lg font-medium text-white">
-                              {" "}
-                              Commercial License{" "}
+                              
+                              Commercial License
                             </span>
                           </li>
                           <li class="flex items-center space-x-3">
@@ -64,8 +64,8 @@
                               </svg>
                             </div>
                             <span class="text-lg font-medium text-white">
-                              {" "}
-                              Unlimited Exports{" "}
+                              
+                              Unlimited Exports
                             </span>
                           </li>
                           <li class="flex items-center space-x-3">
@@ -84,8 +84,8 @@
                               </svg>
                             </div>
                             <span class="text-lg font-medium text-white">
-                              {" "}
-                              120+ Coded Blocks{" "}
+                              
+                              120+ Coded Blocks
                             </span>
                           </li>
                           <li class="flex items-center space-x-3">
@@ -104,8 +104,8 @@
                               </svg>
                             </div>
                             <span class="text-lg font-medium text-white">
-                              {" "}
-                              Design Files Included{" "}
+                              
+                              Design Files Included
                             </span>
                           </li>
                         </ul>
@@ -118,7 +118,7 @@
                         Sign up
                       </h2>
                       <p class="mt-2 text-base text-gray-600">
-                        Already have an account?{" "}
+                        Already have an account?
                         <a
                           href="#"
                           title=""
@@ -131,22 +131,23 @@
                         <div class="space-y-5">
                           <div>
                             <label for="name" class="text-base font-medium text-gray-900">
-                              {" "}
-                              Full Name{" "}
+                              
+                             Username
                             </label>
                             <div class="mt-2">
                               <input
                                 class="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                                 type="text"
-                                placeholder="Full Name"
+                                placeholder="user Name"
                                 id="name"
+                                name="username"
                               />
                             </div>
                           </div>
                           <div>
                             <label for="email" class="text-base font-medium text-gray-900">
-                              {" "}
-                              Email address{" "}
+                              
+                              Email address
                             </label>
                             <div class="mt-2">
                               <input
@@ -154,6 +155,7 @@
                                 type="email"
                                 placeholder="Email"
                                 id="email"
+                                name="username"
                               />
                             </div>
                           </div>
@@ -163,8 +165,8 @@
                                 for="password"
                                 class="text-base font-medium text-gray-900"
                               >
-                                {" "}
-                                Password{" "}
+                                
+                                Password
                               </label>
                             </div>
                             <div class="mt-2">
@@ -173,15 +175,36 @@
                                 type="password"
                                 placeholder="Password"
                                 id="password"
+                                name="password1"
+                              />
+                            </div>
+                          </div>
+                          <div>
+                            <div class="flex items-center justify-between">
+                              <label
+                                for="password"
+                                class="text-base font-medium text-gray-900"
+                              >
+                                
+                                Conform Password
+                              </label>
+                            </div>
+                            <div class="mt-2">
+                              <input
+                                class="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                                type="password"
+                                placeholder="Password"
+                                id="password"
+                                name="password2"
                               />
                             </div>
                           </div>
                           <div>
                             <button
-                              type="button"
+                              type="submit"
                               class="inline-flex w-full items-center justify-center rounded-md bg-black px-3.5 py-2.5 font-semibold leading-7 text-white hover:bg-black/80"
                             >
-                              Create Account{" "}
+                              Create Account
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="16"
